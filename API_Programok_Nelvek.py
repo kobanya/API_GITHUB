@@ -28,6 +28,6 @@ if response.status_code == 200:
 
     # Kiírjuk az összes repository nevét és nyelvét
     for name, language in repo_info:
-        print(f"Repository neve: {name:>30},\t Nyelv: {language}")
+        print(f"A tároló neve: {name:>30},\t Nyelv: {language}")
 else:
     print(f"Hiba történt a GitHub API-val való kommunikáció során. Státuszkód: {response.status_code}")
